@@ -1640,7 +1640,6 @@ if defined serv_cor (
 call :dk_color %Red% "Checking Corrupt Services               [%serv_cor%]"
 
 if not defined showfix (
-echo:
 if /i "%serv_cor%"=="sppsvc-RegistryError" (
 set fixes=%fixes% %mas%fix_service
 call :dk_color2 %Blue% "Check this webpage for help - " %_Yellow% " %mas%fix_service"
